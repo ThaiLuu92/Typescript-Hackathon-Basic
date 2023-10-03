@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sản phẩm
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        
+        <form id="productForm">
+            <h1>Danh sách sản phẩm</h1>
+            <div class="inp-col">
+                <h3>Product Name:</h3>
+                <input type="text" id="product-name" placeholder="Nhập tên sản phẩm">
+            </div>
+            <div class="inp-col">
+                <h3>Product Price:</h3>
+                <input type="number" id="product-price" placeholder="Nhập giá sản phẩm">
+            </div>
+            <div class="inp-col">
+                <h3>Product Avatar:</h3>
+                <input type="text" id="product-avatar" placeholder="Nhập url sản phẩm ">
+            </div>
+            <div><button type="submit" id="add-btn" style="padding: 10px;">Thêm</button></div>
+        </form>
+        
+    </div>
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Avatar</th>
+            <th>Tools</th>
+        </tr>
+
+        <tbody id="productList">
+            <!-- Sản phẩm sẽ được thêm vào đây -->
+        </tbody>
+    </table>
+
+</body>
+<script src="/dist/product/app.js"></script>
+
+</html>
